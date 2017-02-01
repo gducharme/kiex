@@ -43,7 +43,7 @@ if [ "$SYSTEM" = "Linux" ] ; then
     DISTRO="Arch"
   elif (( "$(grep -ic Ubuntu /etc/issue)" > 0 )) ; then
     DISTRO="Ubuntu"
-  elif (( "$(grep -ic Centos /etc/issue)" > 0 )) ; then
+  elif (( "$(grep -ic Centos /etc/redhat-release)" > 0 )) ; then
     DISTRO="Centos"
   elif [[ -f /etc/gentoo-release ]] ; then
     DISTRO="Gentoo"
